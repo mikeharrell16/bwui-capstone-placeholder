@@ -1,0 +1,77 @@
+#main {
+  text-align: left;
+  justify-items: auto;
+}
+
+.jobs {
+  padding: 3.75rem 11.75rem 7.5625rem 11.75rem;
+}
+
+.jobs h3 {
+	text-align: center;
+}
+
+.title1 {
+	grid-column-start: 1;
+	grid-column-end: span 1;
+	grid-row-start: 1;
+	grid-row-end: span 1;
+	padding-top: 3.75rem;
+}
+
+.title2 {
+	grid-column-start: 1;
+	grid-column-end: span 1;
+	grid-row-start: 3;
+	grid-row-end: span 1;
+}
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr) 1fr;
+  align-items: flex-end;
+	grid-column-gap: 3rem;
+	grid-column-start: 1;
+	grid-column-end: span 1;
+	grid-row-start: 2;
+	grid-row-end: span 1;
+}
+
+#main form .button {
+  height: fit-content;
+  padding: 1.14rem 0;
+}
+
+.job-list {
+  border-top: solid 1px hsla(0, 0%, 59%, 1);
+	grid-column-start: 1;
+	grid-column-end: span 1;
+	grid-row-start: 4;
+	grid-row-end: span 1;
+}
+
+.see-jobs {
+	grid-column-start: 1;
+	grid-column-end: span 1;
+	grid-row-start: 5;
+	grid-row-end: span 1;
+	margin-bottom: 6.75rem;
+}
+
+.job {
+  border-bottom: solid 1px hsla(0, 0%, 59%, 1);
+  padding: 1rem 0;
+}
+
+.job h4 {
+  padding-bottom: .5rem;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.job span {
+	font-style: italic;
+}
+
+#see-all-jobs {
+  justify-self: center;
+}

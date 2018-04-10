@@ -1,0 +1,125 @@
+#main {
+  text-align: left;
+  justify-items: auto;
+}
+
+.sell {
+  padding: 3.75rem 11.75rem 7.5rem 11.75rem;
+}
+
+.sell h3 {
+	grid-column-start: 1;
+	grid-column-end: span 1;
+	grid-row-start: 1;
+	grid-row-end: span 1;
+	text-align: center;
+	margin-top: 3rem;
+}
+
+form {
+  display: grid;
+  grid-template-areas: 'name name price quantity'
+                       'description description description description'
+                       '. . . submit';
+  font-size: inherit;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem 3rem;
+	grid-column-start: 1;
+	grid-column-end: span 1;
+	grid-row-start: 2;
+	grid-row-end: span 1;
+	margin-bottom: 6.75rem;
+	padding: 0 6rem;
+}
+
+form a {
+	width: 100%;
+}
+
+.field input {
+  min-width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 1rem;
+	border: 1px solid #212121;
+}
+
+.field select {
+  background-color: fff;
+  font-size: inherit;
+	border-radius: 3px;
+  background-color: #fff;
+	border: 1px solid #212121;
+}
+
+.field textarea {
+  min-height: 12rem;
+  font-size: inherit;
+	border-radius: 3px;
+  background-color: #fff;
+	border: 1px solid #212121;
+}
+
+.field label {
+	font-size: 1.1rem;
+	color: #454545;
+}
+
+.field ::placeholder {
+	color: #898989;
+}
+
+#name {
+  grid-area: name;
+}
+
+#price {
+  grid-area: price;
+}
+
+#quantity {
+  grid-area: quantity;
+}
+
+#description {
+  grid-area: description;
+}
+
+#submit {
+  grid-area: submit;
+  justify-self: end;
+}
+
+@media only screen and (max-width: 1100px) {
+  .sell {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  form {
+    grid-template-areas: 'name name'
+                         'price quantity'
+                         'description description'
+                         '. submit';
+	  grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  form {
+    grid-template-areas: 'name'
+                         'price'
+                         'quantity'
+                         'description'
+                         'submit';
+	  grid-template-columns: 1fr;
+	  padding: 0;
+  }
+
+  #submit {
+    justify-self: center;
+  }
+}
